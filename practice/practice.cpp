@@ -10,6 +10,8 @@ enum keyinput {
 };
 int amend()
 {
+	printf("시작\n");
+	_getch();
 	printf("열 번 입력하세요\n");
 	int i = 10;
 	int average = 0;
@@ -38,8 +40,6 @@ int main()
 {
 	clock_t a, b;
 	int avg;
-	printf("시작");
-	_getch();
 	system("cls");
 	printf("%d\n", avg = amend());
 	while (true)
@@ -53,10 +53,11 @@ int main()
 		case L2: printf("L2"); break;
 		case R2: printf("R2"); break;
 		case R1: printf("R1"); break;
+		case 'r': printf("%d\n", avg = amend()); break;
 		case 'q': return 0;
 		}
 		int result = (int)(b - a);
-		printf("\t%dms\t%g\n", result,(double)result/avg);
+		printf("\t%dms\t%.2f\n", result,(double)result/avg);
 		//printf("\r");
 	}
 }
