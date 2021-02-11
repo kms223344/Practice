@@ -24,7 +24,6 @@ int main()
 		case 'q': return 0;
 		}
 		double result = (double)(b - a);
-		double result = (double)(b - a);
 		printf("\t%gms\n", result);
 		//printf("\r");
 	}
